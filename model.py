@@ -28,13 +28,13 @@ class CareGiverClassification(pl.LightningModule):
 
     def forward(self, input_ids, attention_mask, token_type_ids):
 
-        self.bert.eval()  # 수정 1
-        with torch.no_grad():  # 수정 2
-            out = self.bert(
+        # self.bert.eval()  # 수정 1
+        # with torch.no_grad():  # 수정 2
+        out = self.bert(
             input_ids=input_ids,
             attention_mask=attention_mask,
             token_type_ids=token_type_ids,
-            )
+        )
 
         h_cls = out['last_hidden_state'][:, 0]
         logits = self.W(h_cls)
@@ -166,11 +166,11 @@ class CareGiverDataset(Dataset):
 
 class CareGiverDataModule(pl.LightningDataModule):
 
-    def __init__(self, data_path, mode, valid_size, max_seq_len, batch_size):
+    def __init__(self, data_path, valid_size, max_seq_len, batch_size):
         super().__init__()
         self.data_path = data_path
-        self.full_data_path = f'{self.data_path}/train_{mode}.csv'
-        self.test_data_path = f'{self.data_path}/test_{mode}.csv'
+        self.full_data_path = f'{self.data_path}/caregiver_train.csv'
+        self.test_data_path = f'{self.data_path}/caregiver_test.csv'
         self.valid_size = valid_size
         self.max_seq_len = max_seq_len
         self.batch_size = batch_size

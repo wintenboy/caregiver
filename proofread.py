@@ -8,7 +8,7 @@ import re
 
 
 
-# openai.api_key  = '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'
+
 
 def main():
     parser = argparse.ArgumentParser()

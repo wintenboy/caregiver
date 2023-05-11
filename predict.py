@@ -39,7 +39,6 @@ def main():
 
     dm = CareGiverDataModule(
         data_path=args.data_path,
-        mode='clean',
         valid_size=args.valid_size,
         max_seq_len=args.max_seq_len,
         batch_size=args.batch_size,
