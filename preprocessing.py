@@ -3,14 +3,13 @@ from sklearn.model_selection import train_test_split
 import random
 def generate_preprocessed(data_path):
     # 데이터 불러오기
-    all_data = pd.read_csv(f'{data_path}/data_202206.csv')
+    all_data = pd.read_csv(f'{data_path}/proofread.csv')
 
     # 중복 및 결측치 제거
-    all_data.drop(['customer_number'], axis=1, inplace=True)
     all_data.dropna(inplace=True)
     all_data.drop_duplicates(subset=['document'], inplace=True, ignore_index=True)
 
-    #데이터 분리
+    # 데이터 분리
     X = all_data[['document']]
     Y = all_data[['label']]
     train_x, test_x, train_y, test_y = train_test_split(X, Y, test_size=0.2, random_state=42)
@@ -20,3 +19,5 @@ def generate_preprocessed(data_path):
 
     train_data.to_csv(f'{data_path}/caregiver_train.csv', index=False)
     test_data.to_csv(f'{data_path}/caregiver_test.csv', index=False)
+
+
