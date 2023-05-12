@@ -1,2 +1,3 @@
 # Capstone Design : Data Analysis Projects (with CodeBlossom)
-![pipline](img/pipline.png)
+## Sentiment Analysis Pipeline
+![pipeline](img/pipeline.png)
