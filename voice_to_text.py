@@ -1,11 +1,9 @@
-import whisper # whisper package
-import os # directory 및 file 접근 을 위한 package
-import csv # 출력된 text를 csv file 형태로 저장하기 위한 package
-import pandas as pd# pandas ..
+import whisper
+import os
+import csv
+import pandas as pd
 import re
 import torch
-print(torch.__version__)
-print(torch.cuda.is_available())
 torch.cuda.empty_cache()
 model = whisper.load_model('medium',device=('cuda:0'))
 
