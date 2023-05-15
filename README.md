@@ -1,4 +1,4 @@
-# :sparkles: Capstone Design : Data Analysis Projects (with CodeBlossom) :sparkles:
+# :sparkles: Capstone Design : Data Analysis Projects :sparkles:
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=OpenAI&logoColor=white"/> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=PyTorch&logoColor=white"/> <img src="https://img.shields.io/badge/PyTorch Lightning-792EE5?style=flat&logo=PyTorch Lightning&logoColor=white"/>
 <img src="https://img.shields.io/badge/Numpy-013243?style=flat&logo=Numpy&logoColor=white"/> <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=Pandas&logoColor=white"/>
 
