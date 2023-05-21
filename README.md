@@ -19,3 +19,4 @@
 ![pipeline2](img/pipeline2.gif)
 ## :memo: Note :memo:
 + **데이터 및 변수명, 프롬프트 등은 보안서약의 위반소지가 있으므로 업로드하지 않음.**
++ https://pastebin.com/bYeUUkJm : 데이터 포맷 예시 (**PASSWORD 필요**)
