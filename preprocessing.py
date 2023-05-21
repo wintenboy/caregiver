@@ -7,10 +7,10 @@ def generate_preprocessed(data_path):
 
     # 중복 및 결측치 제거
     all_data.dropna(inplace=True)
-    all_data.drop_duplicates(subset=['document'], inplace=True, ignore_index=True)
+    all_data.drop_duplicates(subset=['variables3'], inplace=True, ignore_index=True)
 
     # 데이터 분리
-    X = all_data[['document']]
+    X = all_data[['variables3']]
     Y = all_data[['label']]
     train_x, test_x, train_y, test_y = train_test_split(X, Y, test_size=0.2, random_state=42)
 
